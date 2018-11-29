@@ -19,4 +19,4 @@
 
 ### É uma linguagem de estilo, que tem as seguintes responsabilidades:
 
-- `Visual` - Estiliza o documento HTML e seus elementos, deixando-os como devem ser exibidos.
+- `Visual` - Estiliza o documento HTML e seus elementos, deixando-os como devem ser exibidos nos browsers.
