@@ -24,6 +24,16 @@
   margin-right: 60px;
 }
 
+.header-store .action.-search {
+  font-size: inherit;
+  margin-right: 65px;
+  background-color: transparent;
+  border: inherit;
+  color: inherit;
+  border-bottom: 1px solid #fff;
+  width: 358px;
+}
+
 .header-store .action.-last {
   margin-right: 0;
 }
