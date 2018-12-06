@@ -12,28 +12,26 @@
   text-transform: uppercase;
 }
 
-.header-store .navigation {
+.header-store > .navigation {
   font-size: 21px;
   font-family: "Segoe UI", "Roboto", sans-serif;
   float: right;
+}
+
+.header-store [type="search"] {
+  background: transparent;
+  font-size: inherit;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: inherit;
+  font-family: Arial, "Roboto", sans-serif;
+  padding: 8px;
+  width: 358px;
+  margin-right: 65px;
 }
 
 .header-store .action {
   text-decoration: none;
   color: inherit;
   margin-right: 60px;
-}
-
-.header-store .action.-search {
-  font-size: inherit;
-  margin-right: 65px;
-  background-color: transparent;
-  border: inherit;
-  color: inherit;
-  border-bottom: 1px solid #fff;
-  width: 358px;
-}
-
-.header-store .action.-last {
-  margin-right: 0;
 }

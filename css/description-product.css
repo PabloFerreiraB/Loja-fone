@@ -5,21 +5,20 @@
 
 .description-product > .title {
   font-size: 25px;
-}
-
-.description-product .star {
-  display: flex;
-  flex-direction: row;
-  margin: 50px 0 25px;
-}
-
-.description-product .star > .star-item {
-  padding-right: 10px;
+  margin-bottom: 50px;
 }
 
 .description-product > .item {
   font-size: 20px;
   margin-bottom: 28px;
+}
+
+.description-product > .item.-star {
+  margin-bottom: 10px;
+}
+
+.description-product > .item.-star + .item {
+  margin-left: 7px;
 }
 
 .description-product > .item.-info {
