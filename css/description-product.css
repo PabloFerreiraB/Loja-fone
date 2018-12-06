@@ -5,7 +5,16 @@
 
 .description-product > .title {
   font-size: 25px;
-  margin-bottom: 100px;
+}
+
+.description-product .star {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0 25px;
+}
+
+.description-product .star > .star-item {
+  padding-right: 10px;
 }
 
 .description-product > .item {
@@ -31,10 +40,6 @@
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 30px;
-}
-
-.description-product > .text.-more {
-  margin-bottom: 98px;
 }
 
 .description-product .action {
