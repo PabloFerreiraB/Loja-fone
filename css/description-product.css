@@ -13,10 +13,12 @@
   margin-bottom: 28px;
 }
 
-.description-product > .item.-star {
+.description-product .item.-star {
   margin-bottom: 10px;
 }
-
+.description-product .item.-star > .item {
+  cursor: pointer;
+}
 .description-product > .item.-star + .item {
   margin-left: 7px;
 }
