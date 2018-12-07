@@ -32,3 +32,13 @@
   border: none;
   text-decoration: none;
 }
+
+.buttons .button-store.-first:hover {
+  background-color: #fff;
+  color: #252c41;
+}
+
+.buttons .button-store.-second:hover {
+  background-color: #fff;
+  color: #e24647;
+}
