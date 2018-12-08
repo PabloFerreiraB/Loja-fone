@@ -20,6 +20,10 @@
   top: 8px;
 }
 
+.description-product .icon {
+  transition: transform 100ms linear;
+}
+
 .description-product .icon:hover {
   transform: scale(1.2);
 }
