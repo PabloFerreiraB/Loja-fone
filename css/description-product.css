@@ -20,10 +20,14 @@
   top: 8px;
 }
 
+.description-product .icon:hover {
+  transform: scale(1.2);
+}
+
 .description-product .item.-star {
   margin-bottom: 10px;
 }
-.description-product .item.-star > .item {
+.description-product .item.-star > .icon {
   cursor: pointer;
 }
 .description-product > .item.-star + .item {
