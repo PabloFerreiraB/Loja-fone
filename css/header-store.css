@@ -19,6 +19,11 @@
   float: right;
 }
 
+/* Fiz isso por causa do comportamento do Google Chrome */
+.header-store [type="search"]::placeholder {
+  color: #fff;
+}
+
 .header-store [type="search"] {
   background: transparent;
   font-size: inherit;
@@ -46,5 +51,6 @@
 }
 
 .header-store .action.-last {
-  margin-right: 0;
+  /* margin-right: 0; */
+  margin-right: -50px;
 }
