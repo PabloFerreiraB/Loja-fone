@@ -16,8 +16,14 @@
 .description-product > .item.-heart {
   position: absolute;
   transform: translateX(-100%);
-  left: -47px;
   top: 8px;
+  left: -47px;
+  cursor: pointer;
+}
+
+.description-product > .item.-star {
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .description-product .icon {
@@ -28,12 +34,6 @@
   transform: scale(1.2);
 }
 
-.description-product .item.-star {
-  margin-bottom: 10px;
-}
-.description-product .item.-star > .icon {
-  cursor: pointer;
-}
 .description-product > .item.-star + .item {
   margin-left: 7px;
 }
@@ -43,7 +43,7 @@
   text-align: right;
 }
 
-.description-product > .item.-info.-last {
+.description-product > .item.-last {
   margin-bottom: 72px;
 }
 

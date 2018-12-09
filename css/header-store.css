@@ -2,7 +2,7 @@
   color: #fff;
   overflow: hidden;
   margin-bottom: 138px;
-  padding: 60px;
+  padding-left: 60px;
 }
 
 .header-store > .title {
@@ -19,18 +19,13 @@
   float: right;
 }
 
-/* Fiz isso por causa do comportamento do Google Chrome */
-.header-store [type="search"]::placeholder {
-  color: #fff;
-}
-
 .header-store [type="search"] {
   background: transparent;
-  font-size: inherit;
   border: none;
   border-bottom: 1px solid #fff;
   color: inherit;
   font-family: Arial, "Roboto", sans-serif;
+  font-size: 20px;
   padding: 8px;
   width: 358px;
   margin-right: 65px;
@@ -43,14 +38,76 @@
   color: inherit;
   margin-right: 60px;
   padding-bottom: 8px;
-  border-bottom: 1px solid transparent;
-}
-
-.header-store .action:hover {
-  border-bottom-color: #fff;
+  position: relative;
 }
 
 .header-store .action.-last {
-  /* margin-right: 0; */
-  margin-right: -50px;
+  margin-right: 0;
+}
+
+.header-store .action:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 200ms linear;
+  transform-origin: center left;
+}
+
+.header-store .action:hover:after {
+  transform: scale(1);
+}
+
+@media (max-width: 1235px) {
+  .header-store > .title {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .header-store > .navigation {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 955px) {
+  .header-store {
+    padding-left: 30px;
+  }
+  .header-store [type="search"] {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  .header-store .action {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 465px) {
+  .header-store .action {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-store {
+    padding-left: 16px;
+  }
+
+  .header-store .action {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 335px) {
+  .header-store > .navigation {
+    display: none;
+  }
 }
