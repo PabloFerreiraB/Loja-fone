@@ -13,7 +13,6 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
-
   transition: all 300ms linear;
 }
 
@@ -48,4 +47,23 @@
   border: none;
   color: inherit;
   text-decoration: inherit;
+}
+
+@media (max-width: 500px) {
+  .button-store.-second {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .button-store,
+  .button-store.-second {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .button-store.-second {
+    margin-bottom: 15px;
+  }
 }
