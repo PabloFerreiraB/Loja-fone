@@ -1,14 +1,17 @@
-//
-
-const $heart = window.document.querySelector(".-heart");
+const $heart = document.querySelector(".-heart");
+const $stars = document.querySelectorAll(".star");
 
 $heart.addEventListener("click", handleClick);
+$stars.forEach(function($star) {
+  $star.addEventListener("click", handleClick);
+});
 
 function handleClick() {
-  // if ($heart.classList.contains("-active")) {
-  //   $heart.classList.remove("-active");
-  // } else {
-  //   $heart.classList.add("-active");
-  // }
-  $heart.classList.toggle("-active");
+  // Usando o "toggle"
+  // Se tive a classe remove, se não adiciona
+  this.classList.toggle("-active");
+}
+
+function handleClick() {
+  this.classList.toggle("-active");
 }

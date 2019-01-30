@@ -1,7 +1,7 @@
 let valorInicial = 10;
-const $buttonSecond = document.querySelector(".-second");
+const $second = document.querySelector(".-second");
 
-$buttonSecond.addEventListener("click", handleClick);
+$second.addEventListener("click", handleClick);
 
 function handleClick() {
   const $cart = document.querySelector(".-last");
